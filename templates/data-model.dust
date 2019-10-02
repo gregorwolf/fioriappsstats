@@ -1,0 +1,7 @@
+namespace com.sap.sapmentors.fioriappstats;{~n}
+{~n}
+entity Apps {{~n}
+  {#fields}
+  {key} {column} : {type};{~n}
+  {/fields}
+}

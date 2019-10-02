@@ -1,8 +1,11 @@
 const odata = require('odata-client')
 const XLSX = require('xlsx')
+const fs = require('fs')
+const dustfs = require('dustfs')
+dustfs.dirs('templates')
 
 // For testing 3, later 100
-const top = 100
+const top = 3
 const odataParams = {
   service: 'https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata', 
   resources: "InputFilterParam(InpFilterValue='1NA')/Results",
@@ -34,9 +37,17 @@ function getData(i) {
 
 function generateAppsCSV(apps) {
   var header = []
+  var datamodel = { fields: [] }
   for (var prop in apps[0]) {
-    if (prop !== "__metadata") {
+    if (prop !== '__metadata') {
       header.push(prop)
+      var field = {}
+      if(prop === 'Id') {
+        field.key = 'key'
+      }
+      field.column = prop
+      field.type = 'String'
+      datamodel.fields.push(field)
     }
   }
   // console.log(header)
@@ -45,12 +56,24 @@ function generateAppsCSV(apps) {
   var ws = XLSX.utils.json_to_sheet(apps, options)
   XLSX.utils.book_append_sheet(wb, ws, 'test')
   XLSX.writeFile(wb, 'gen/apps.csv', {FS: ";"})
+
+  dustfs.render('data-model.dust', datamodel, function(err, out) {
+    if(err) {
+      console.log('Error: '+err);
+    } else {
+      fs.writeFile('gen/db/data-model.cds', out, function (err, file) {
+        if (err) throw err
+        console.log('Saved!')
+      })
+    }
+  })
+  
 }
 
 q.custom(filter).count().get().then(function(response) {
   var lines = response.body
   // For testing
-  // lines = 5
+  lines = 5
   var apps = []
   for(i = 0; i < lines; i += top) {
     var response = getData(i)
