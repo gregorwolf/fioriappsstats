@@ -1,7 +1,8 @@
 namespace com.sap.sapmentors.fioriappstats;{~n}
 {~n}
+@Aggregation.ApplySupported.PropertyRestrictions: true{~n}
 entity Apps {{~n}
   {#fields}
-  {key} {column} : {type} @( title: '{column}');{~n}
+  {analytics} {key} {column} : {type} @( title: '{column}');{~n}
   {/fields}
 }
