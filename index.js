@@ -1,7 +1,8 @@
 const odata = require('odata-client')
+const XLSX = require('xlsx')
 
 // For testing 3, later 100
-const top = 3
+const top = 100
 const odataParams = {
   service: 'https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata', 
   resources: "InputFilterParam(InpFilterValue='1NA')/Results",
@@ -32,13 +33,24 @@ function getData(i) {
 }
 
 function generateAppsCSV(apps) {
-  
+  var header = []
+  for (var prop in apps[0]) {
+    if (prop !== "__metadata") {
+      header.push(prop)
+    }
+  }
+  // console.log(header)
+  const wb = XLSX.utils.book_new()
+  options = {header: header}
+  var ws = XLSX.utils.json_to_sheet(apps, options)
+  XLSX.utils.book_append_sheet(wb, ws, 'test')
+  XLSX.writeFile(wb, 'gen/apps.csv', {FS: ";"})
 }
 
 q.custom(filter).count().get().then(function(response) {
   var lines = response.body
   // For testing
-  lines = 5
+  // lines = 5
   var apps = []
   for(i = 0; i < lines; i += top) {
     var response = getData(i)
@@ -48,7 +60,6 @@ q.custom(filter).count().get().then(function(response) {
         apps.push(item)
       })
       if(apps.length >= lines) {
-        console.log("All data is read")
         generateAppsCSV(apps)
       } 
     })
