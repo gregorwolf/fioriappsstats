@@ -41,11 +41,17 @@ function generateAppsCSV(apps) {
   for (var prop in apps[0]) {
     header.push(prop)
     var field = {}
+    field.analytics = "@Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
+      delete field.analytics
+    }
+    field.type = 'String'
+    if(prop === 'count') {
+      field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
+      field.type = 'Integer'
     }
     field.column = prop
-    field.type = 'String'
     datamodel.fields.push(field)
   }
   console.log(header.length)
@@ -81,6 +87,7 @@ q.custom(filter).count().get().then(function(response) {
         delete item.__metadata
         delete item.RoleDescription
         delete item.RoleCombinedToolTipDescription
+        item.count = 1
         apps.push(item)
       })
       if(apps.length >= lines) {
