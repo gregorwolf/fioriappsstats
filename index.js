@@ -5,7 +5,7 @@ const dustfs = require('dustfs')
 dustfs.dirs('templates')
 
 // For testing 3, later 100
-const top = 3
+const top = 100
 const odataParams = {
   service: 'https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata', 
   resources: "InputFilterParam(InpFilterValue='1NA')/Results",
@@ -39,23 +39,21 @@ function generateAppsCSV(apps) {
   var header = []
   var datamodel = { fields: [] }
   for (var prop in apps[0]) {
-    if (prop !== '__metadata') {
-      header.push(prop)
-      var field = {}
-      if(prop === 'Id') {
-        field.key = 'key'
-      }
-      field.column = prop
-      field.type = 'String'
-      datamodel.fields.push(field)
+    header.push(prop)
+    var field = {}
+    if(prop === 'Id') {
+      field.key = 'key'
     }
+    field.column = prop
+    field.type = 'String'
+    datamodel.fields.push(field)
   }
-  // console.log(header)
+  console.log(header.length)
   const wb = XLSX.utils.book_new()
   options = {header: header}
   var ws = XLSX.utils.json_to_sheet(apps, options)
   XLSX.utils.book_append_sheet(wb, ws, 'test')
-  XLSX.writeFile(wb, 'gen/apps.csv', {FS: ";"})
+  XLSX.writeFile(wb, 'gen/db/csv/com.sap.sapmentors.fioriappstats-Apps.csv', {FS: ";"})
 
   dustfs.render('data-model.dust', datamodel, function(err, out) {
     if(err) {
@@ -73,13 +71,16 @@ function generateAppsCSV(apps) {
 q.custom(filter).count().get().then(function(response) {
   var lines = response.body
   // For testing
-  lines = 5
+  // lines = 5
   var apps = []
   for(i = 0; i < lines; i += top) {
     var response = getData(i)
     response.then(function(response) {
       var results = JSON.parse(response.body).d.results
       results.forEach(function (item) {
+        delete item.__metadata
+        delete item.RoleDescription
+        delete item.RoleCombinedToolTipDescription
         apps.push(item)
       })
       if(apps.length >= lines) {
