@@ -47,7 +47,7 @@ function generateAppsCSV(apps) {
       delete field.analytics
     }
     field.type = 'String'
-    if(prop === 'count') {
+    if(prop === 'counter') {
       field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
       field.type = 'Integer'
     }
@@ -87,7 +87,7 @@ q.custom(filter).count().get().then(function(response) {
         delete item.__metadata
         delete item.RoleDescription
         delete item.RoleCombinedToolTipDescription
-        item.count = 1
+        item.counter = 1
         apps.push(item)
       })
       if(apps.length >= lines) {
