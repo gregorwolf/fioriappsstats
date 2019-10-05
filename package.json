@@ -14,6 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "dustfs": "0.0.7",
+    "html-entities": "^1.2.1",
     "odata-client": "^0.6.13",
     "xlsx": "^0.15.1"
   }
