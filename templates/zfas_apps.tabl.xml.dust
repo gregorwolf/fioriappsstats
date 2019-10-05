@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>{~n}
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">{~n}
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">{~n}
+  <asx:values>{~n}
+   <DD02V>{~n}
+    <TABNAME>ZFAS_APPS</TABNAME>{~n}
+    <DDLANGUAGE>E</DDLANGUAGE>{~n}
+    <TABCLASS>TRANSP</TABCLASS>{~n}
+    <CLIDEP>X</CLIDEP>{~n}
+    <DDTEXT>Applications Test</DDTEXT>{~n}
+    <MAINFLAG>X</MAINFLAG>{~n}
+    <CONTFLAG>A</CONTFLAG>{~n}
+    <EXCLASS>1</EXCLASS>{~n}
+   </DD02V>{~n}
+   <DD09L>{~n}
+    <TABNAME>ZFAS_APPS</TABNAME>{~n}
+    <AS4LOCAL>A</AS4LOCAL>{~n}
+    <TABKAT>1</TABKAT>{~n}
+    <TABART>APPL1</TABART>{~n}
+    <BUFALLOW>N</BUFALLOW>{~n}
+   </DD09L>{~n}
+   <DD03P_TABLE>{~n}
+    <DD03P>{~n}
+     <TABNAME>ZFAS_APPS</TABNAME>{~n}
+     <FIELDNAME>CLIENT</FIELDNAME>{~n}
+     <POSITION>0001</POSITION>{~n}
+     <KEYFLAG>X</KEYFLAG>{~n}
+     <ROLLNAME>MANDT</ROLLNAME>{~n}
+     <ADMINFIELD>0</ADMINFIELD>{~n}
+     <NOTNULL>X</NOTNULL>{~n}
+     <COMPTYPE>E</COMPTYPE>{~n}
+    </DD03P>{~n}
+    {#fields}
+    <DD03P>{~n}
+     <TABNAME>ZFAS_APPS</TABNAME>{~n}
+     <FIELDNAME>{abapColumn}</FIELDNAME>{~n}
+     <DDLANGUAGE>E</DDLANGUAGE>{~n}
+     <POSITION>{abapPosition}</POSITION>{~n}
+     {abapKey|s}{~n}
+     <ADMINFIELD>0</ADMINFIELD>{~n}
+     <INTTYPE>{abapInttype}</INTTYPE>{~n}
+     <!-- <INTLEN>000040</INTLEN> -->{~n}
+     {abapNotnull|s}{~n}
+     <DATATYPE>{abapType}</DATATYPE>{~n}
+     {abapLength|s}{~n}
+     <MASK>  {abapType}</MASK>{~n}
+     <DDTEXT>{column}</DDTEXT>{~n}
+    </DD03P>{~n}
+    {/fields}{~n}
+   </DD03P_TABLE>{~n}
+  </asx:values>{~n}
+ </asx:abap>{~n}
+</abapGit>

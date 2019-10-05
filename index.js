@@ -5,7 +5,7 @@ const dustfs = require('dustfs')
 dustfs.dirs('templates')
 
 // For testing 3, later 100
-const top = 100
+const top = 3
 const odataParams = {
   service: 'https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata', 
   resources: "InputFilterParam(InpFilterValue='1NA')/Results",
@@ -35,23 +35,51 @@ function getData(i) {
   return query.top(top).skip(i).custom(filter).get()
 }
 
+function createFileFromTemplate(template, datamodel, filename) {
+  dustfs.render(template, datamodel, function(err, out) {
+    if(err) {
+      console.log('Error: '+err);
+    } else {
+      fs.writeFile(filename, out, function (err, file) {
+        if (err) throw err
+        console.log('Saved template ' + template + ' at ' + filename)
+      })
+    }
+  })
+}
+
 function generateAppsCSV(apps) {
   var header = []
   var datamodel = { fields: [] }
+  var abapPosition = 1
   for (var prop in apps[0]) {
+    abapPosition++
     header.push(prop)
     var field = {}
+    field.type = 'String'
+    field.abapPosition = abapPosition
+    field.abapInttype = 'g'
+    field.abapType = 'SSTR'
+    field.abapLength = '<LENG>00040</LENG>'
     field.analytics = "@Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
+      field.abapType = 'CHAR'
+      field.abapInttype = 'C'
+      field.abapKey = '<KEYFLAG>X</KEYFLAG>'
+      field.abapLength = '<LENG>000020</LENG>'
+      field.abapNotnull = '<NOTNULL>X</NOTNULL>'
       delete field.analytics
     }
-    field.type = 'String'
     if(prop === 'counter') {
       field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
       field.type = 'Integer'
+      field.abapType = 'INT4'
+      field.abapInttype = 'X'
+      field.abapLength = '<LENG>000010</LENG>'
     }
     field.column = prop
+    field.abapColumn = prop.toUpperCase()
     datamodel.fields.push(field)
   }
   console.log(header.length)
@@ -61,23 +89,14 @@ function generateAppsCSV(apps) {
   XLSX.utils.book_append_sheet(wb, ws, 'test')
   XLSX.writeFile(wb, 'gen/db/csv/com.sap.sapmentors.fioriappstats-Apps.csv', {FS: ";"})
 
-  dustfs.render('data-model.dust', datamodel, function(err, out) {
-    if(err) {
-      console.log('Error: '+err);
-    } else {
-      fs.writeFile('gen/db/data-model.cds', out, function (err, file) {
-        if (err) throw err
-        console.log('Saved!')
-      })
-    }
-  })
-  
+  createFileFromTemplate('data-model.dust', datamodel, 'gen/db/data-model.cds')
+  createFileFromTemplate('zfas_apps.tabl.xml.dust', datamodel, 'gen/abap/zfas_apps.tabl.xml')
 }
 
 q.custom(filter).count().get().then(function(response) {
   var lines = response.body
   // For testing
-  // lines = 5
+  lines = 5
   var apps = []
   for(i = 0; i < lines; i += top) {
     var response = getData(i)
@@ -87,6 +106,8 @@ q.custom(filter).count().get().then(function(response) {
         delete item.__metadata
         delete item.RoleDescription
         delete item.RoleCombinedToolTipDescription
+        item.DatabaseName = item.Database
+        delete item.Database
         item.counter = 1
         apps.push(item)
       })
