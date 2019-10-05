@@ -4,8 +4,12 @@ const fs = require('fs')
 const dustfs = require('dustfs')
 dustfs.dirs('templates')
 
+var test = false
+var top = 100
 // For testing 3, later 100
-const top = 3
+if(test) {
+  top = 5
+}
 const odataParams = {
   service: 'https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata', 
   resources: "InputFilterParam(InpFilterValue='1NA')/Results",
@@ -60,14 +64,14 @@ function generateAppsCSV(apps) {
     field.abapPosition = abapPosition
     field.abapInttype = 'g'
     field.abapType = 'SSTR'
-    field.abapLength = '<LENG>00040</LENG>'
+    field.abapLength = '00040'
     field.analytics = "@Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
       field.abapType = 'CHAR'
       field.abapInttype = 'C'
       field.abapKey = '<KEYFLAG>X</KEYFLAG>'
-      field.abapLength = '<LENG>000020</LENG>'
+      field.abapLength = '000020'
       field.abapNotnull = '<NOTNULL>X</NOTNULL>'
       delete field.analytics
     }
@@ -76,10 +80,10 @@ function generateAppsCSV(apps) {
       field.type = 'Integer'
       field.abapType = 'INT4'
       field.abapInttype = 'X'
-      field.abapLength = '<LENG>000010</LENG>'
+      field.abapLength = '000010'
     }
     field.column = prop
-    field.abapColumn = prop.toUpperCase()
+    field.abapColumn = prop.toUpperCase().substr(0,30)
     datamodel.fields.push(field)
   }
   console.log(header.length)
@@ -91,12 +95,15 @@ function generateAppsCSV(apps) {
 
   createFileFromTemplate('data-model.dust', datamodel, 'gen/db/data-model.cds')
   createFileFromTemplate('zfas_apps.tabl.xml.dust', datamodel, 'gen/abap/zfas_apps.tabl.xml')
+  createFileFromTemplate('zfas_fill_apps.abap.dust', datamodel, 'gen/abap/zfas_fill_apps.abap')
 }
 
 q.custom(filter).count().get().then(function(response) {
   var lines = response.body
   // For testing
-  lines = 5
+  if(test) {
+    lines = 5
+  }
   var apps = []
   for(i = 0; i < lines; i += top) {
     var response = getData(i)

@@ -1,0 +1,7 @@
+{#fields}
+{abapColumn} TYPE RMPSPEDESCR,{~n}
+{/fields}
+{~n}
+{#fields}
+<fs_idat>-{abapColumn}{~n}
+{/fields}

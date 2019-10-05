@@ -42,7 +42,7 @@
      <!-- <INTLEN>000040</INTLEN> -->{~n}
      {abapNotnull|s}{~n}
      <DATATYPE>{abapType}</DATATYPE>{~n}
-     {abapLength|s}{~n}
+     <LENG>{abapLength}</LENG>{~n}
      <MASK>  {abapType}</MASK>{~n}
      <DDTEXT>{column}</DDTEXT>{~n}
     </DD03P>{~n}
