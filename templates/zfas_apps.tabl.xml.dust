@@ -34,17 +34,19 @@
     <DD03P>{~n}
      <TABNAME>ZFAS_APPS</TABNAME>{~n}
      <FIELDNAME>{abapColumn}</FIELDNAME>{~n}
-     <DDLANGUAGE>E</DDLANGUAGE>{~n}
+     <!-- <DDLANGUAGE>E</DDLANGUAGE> -->{~n}
      <POSITION>{abapPosition}</POSITION>{~n}
+     <ROLLNAME>{abapRollname}</ROLLNAME>{~n}
      {abapKey|s}{~n}
      <ADMINFIELD>0</ADMINFIELD>{~n}
-     <INTTYPE>{abapInttype}</INTTYPE>{~n}
+     <!-- <INTTYPE>{abapInttype}</INTTYPE> -->{~n}
      <!-- <INTLEN>000040</INTLEN> -->{~n}
      {abapNotnull|s}{~n}
-     <DATATYPE>{abapType}</DATATYPE>{~n}
-     <LENG>{abapLength}</LENG>{~n}
-     <MASK>  {abapType}</MASK>{~n}
-     <DDTEXT>{column}</DDTEXT>{~n}
+     <!-- <DATATYPE>{abapType}</DATATYPE> -->{~n}
+     <!-- <LENG>{abapLength}</LENG> -->{~n}
+     <!-- <MASK>  {abapType}</MASK> -->{~n}
+     <!-- <DDTEXT>{column}</DDTEXT> -->{~n}
+     <COMPTYPE>E</COMPTYPE>{~n}
     </DD03P>{~n}
     {/fields}{~n}
    </DD03P_TABLE>{~n}

@@ -6,7 +6,7 @@ const entities = new Entities()
 const dustfs = require('dustfs')
 dustfs.dirs('templates')
 
-var test = false
+var test = true
 var top = 100
 // For testing 3, later 100
 if(test) {
@@ -64,25 +64,34 @@ function generateAppsCSV(apps) {
     var field = {}
     field.type = 'String'
     field.abapPosition = abapPosition
+    field.abapRollname = 'RMPSPEDESCR'
+    /*
     field.abapInttype = 'g'
     field.abapType = 'SSTR'
     field.abapLength = '00040'
+    */
     field.analytics = "@Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
+      field.abapRollname = 'TCVERSION'
+      field.abapNotnull = '<NOTNULL>X</NOTNULL>'
+      field.abapKey = '<KEYFLAG>X</KEYFLAG>'
+      /*
       field.abapType = 'CHAR'
       field.abapInttype = 'C'
-      field.abapKey = '<KEYFLAG>X</KEYFLAG>'
       field.abapLength = '000020'
-      field.abapNotnull = '<NOTNULL>X</NOTNULL>'
+      */
       delete field.analytics
     }
     if(prop === 'counter') {
       field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
       field.type = 'Integer'
+      field.abapRollname = 'BCA_REL_DTE_COUNT'
+      /*
       field.abapType = 'INT4'
       field.abapInttype = 'X'
       field.abapLength = '000010'
+      */
     }
     field.column = prop
     field.abapColumn = prop.toUpperCase().substr(0,30)
