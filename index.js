@@ -65,6 +65,7 @@ function generateAppsCSV(apps) {
     field.type = 'String'
     field.abapPosition = abapPosition
     field.abapRollname = 'RMPSPEDESCR'
+    field.abapAs = prop.substr(0,30)
     /*
     field.abapInttype = 'g'
     field.abapType = 'SSTR'
@@ -73,6 +74,7 @@ function generateAppsCSV(apps) {
     field.analytics = "@Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
+      field.abapAs = 'Identification'
       field.abapRollname = 'TCVERSION'
       field.abapNotnull = '<NOTNULL>X</NOTNULL>'
       field.abapKey = '<KEYFLAG>X</KEYFLAG>'
@@ -86,12 +88,19 @@ function generateAppsCSV(apps) {
     if(prop === 'counter') {
       field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
       field.type = 'Integer'
+      field.abapAs = 'Apps'
       field.abapRollname = 'BCA_REL_DTE_COUNT'
+      field.abapLineItem = "@UI.lineItem: [{position: " + abapPosition * 10 + " }]"  
+      field.abapDefaultAggregation = "@DefaultAggregation: #SUM"
       /*
       field.abapType = 'INT4'
       field.abapInttype = 'X'
       field.abapLength = '000010'
       */
+    }
+    if(prop === 'DatabaseName') {
+      field.abapSelectionField = "@UI.selectionField: [{position: " + abapPosition * 10 + " }]"
+      field.abapLineItem = "@UI.lineItem: [{position: " + abapPosition * 10 + " }]"  
     }
     field.column = prop
     field.abapColumn = prop.toUpperCase().substr(0,30)
@@ -106,6 +115,7 @@ function generateAppsCSV(apps) {
   createFileFromTemplate('data-model.dust', datamodel, 'gen/db/data-model.cds')
   createFileFromTemplate('zfas_apps.tabl.xml.dust', datamodel, 'gen/abap/zfas_apps.tabl.xml')
   createFileFromTemplate('zfas_fill_apps.abap.dust', datamodel, 'gen/abap/zfas_fill_apps.abap')
+  createFileFromTemplate('zfas_apps_dd.abapcdsdd.dust', datamodel, 'gen/abap/zfas_apps_dd.abapcdsdd')
 }
 
 q.custom(filter).count().get().then(function(response) {
