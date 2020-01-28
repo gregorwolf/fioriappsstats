@@ -1,0 +1,19 @@
+@AbapCatalog.sqlViewName: 'ZFAS_APPS_V'{~n}
+@AbapCatalog.compiler.compareFilter: true{~n}
+@AbapCatalog.preserveKey: true{~n}
+@AccessControl.authorizationCheck: #CHECK{~n}
+@EndUserText.label: 'Fiori Apps Statistics'{~n}
+@Analytics.dataCategory: #CUBE{~n}
+@OData.publish: true{~n}
+{~n}
+define view ZFAS_APPS_DD{~n}
+  as select from zfas_apps{~n}
+{{~n}
+  {#fields}
+   {abapSelectionField}{~n}
+   {abapLineItem}{~n}
+   {abapDefaultAggregation}{~n}
+   @EndUserText.label: '{column}'{~n}
+  {key} {abapColumn} as {abapAs}{@sep},{/sep}{~n}
+  {/fields}
+}{~n}
