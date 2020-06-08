@@ -4,7 +4,8 @@
   "description": "Fiori Apps Library Statistics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mkdir -p gen/db/csv && node index"
   },
   "keywords": [
     "SAP",
@@ -15,6 +16,6 @@
   "dependencies": {
     "dustfs": "0.0.7",
     "odata-client": "^0.6.13",
-    "xlsx": "^0.15.1"
+    "xlsx": "^0.16.2"
   }
 }

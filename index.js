@@ -41,14 +41,14 @@ function generateAppsCSV(apps) {
   for (var prop in apps[0]) {
     header.push(prop)
     var field = {}
-    field.analytics = "@Analytics.Dimension: true\n"
+    field.analytics = "  @Analytics.Dimension: true\n"
     if(prop === 'Id') {
       field.key = 'key'
       delete field.analytics
     }
     field.type = 'String'
     if(prop === 'count') {
-      field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
+      field.analytics = "  @Analytics.Measure: true\n  @Aggregation.default: #SUM\n"
       field.type = 'Integer'
     }
     field.column = prop
