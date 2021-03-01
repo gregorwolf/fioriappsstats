@@ -1,8 +1,7 @@
 const odata = require('odata-client')
 const XLSX = require('xlsx')
 const fs = require('fs')
-const Entities = require('html-entities').AllHtmlEntities
-const entities = new Entities()
+const { decode } = require('html-entities');
 const dustfs = require('dustfs')
 dustfs.dirs('templates')
 
@@ -128,7 +127,7 @@ q.custom(filter).count().get().then(function(response) {
   for(i = 0; i < lines; i += top) {
     var response = getData(i)
     response.then(function(response) {
-      var results = JSON.parse(entities.decode(response.body)).d.results
+      var results = JSON.parse(decode(response.body)).d.results
       results.forEach(function (item) {
         delete item.__metadata
         delete item.RoleDescription
