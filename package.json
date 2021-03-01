@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "mkdir -p gen/db/csv && node index"
+    "start": "rimraf gen && mkdir -p gen/abap && mkdir -p gen/db/csv && node index"
   },
   "keywords": [
     "SAP",
@@ -18,5 +18,8 @@
     "html-entities": "^2.1.0",
     "odata-client": "^0.6.14",
     "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
   }
 }
