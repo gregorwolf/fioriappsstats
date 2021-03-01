@@ -84,8 +84,9 @@ function generateAppsCSV(apps) {
       */
       delete field.analytics
     }
-    if(prop === 'counter') {
-      field.analytics = "@Analytics.Measure: true\n@Aggregation.default: #SUM\n"
+    field.type = 'String'
+    if(prop === 'count') {
+      field.analytics = "  @Analytics.Measure: true\n  @Aggregation.default: #SUM\n"
       field.type = 'Integer'
       field.abapAs = 'Apps'
       field.abapRollname = 'BCA_REL_DTE_COUNT'
