@@ -2,24 +2,50 @@
   "name": "fioriappsstats",
   "version": "0.0.1",
   "description": "Fiori Apps Library Statistics",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index"
-  },
-  "keywords": [
-    "SAP",
-    "Fiori"
-  ],
-  "author": "gregor.wolf@gmail.com",
+  "repository": "https://github.com/gregorwolf/fioriappsstats.git ",
   "license": "Apache-2.0",
+  "author": "gregor.wolf@gmail.com",
+  "private": false,
   "dependencies": {
+    "@sap/cds": "^5",
     "dustfs": "0.0.7",
+    "express": "^4",
     "html-entities": "^2.3.2",
     "odata-client": "^0.6.15",
     "xlsx": "^0.17.0"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:generator": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index",
+    "start": "cds run"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "es2020": true,
+      "node": true,
+      "jest": true,
+      "mocha": true
+    },
+    "globals": {
+      "SELECT": true,
+      "INSERT": true,
+      "UPDATE": true,
+      "DELETE": true,
+      "CREATE": true,
+      "DROP": true,
+      "CDL": true,
+      "CQL": true,
+      "CXL": true,
+      "cds": true
+    },
+    "rules": {
+      "no-console": "off",
+      "require-atomic-updates": "off"
+    }
   }
 }
