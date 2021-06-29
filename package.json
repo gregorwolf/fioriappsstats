@@ -47,5 +47,13 @@
       "no-console": "off",
       "require-atomic-updates": "off"
     }
+  },
+  "cds": {
+    "requires": {
+      "SingleApp.fix.externalViewer.services.SingleApp": {
+        "kind": "odata",
+        "model": "srv/external/SingleApp"
+      }
+    }
   }
 }

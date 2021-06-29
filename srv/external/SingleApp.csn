@@ -1,0 +1,6984 @@
+{
+  "definitions": {
+    "SingleApp.fix.externalViewer.services.SingleApp": {
+      "kind": "service"
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Apps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "Id": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "productInstanceBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "appId": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppNameAll": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityIDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "availabilityInFaaSCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LobCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "IndustryCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PCDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACHCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACHLevel2Combined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "DatabaseCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryPVOfficialNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PVFrontendCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PVBackendCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppTypeCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogNameCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "FrontendSCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseGroupTextCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PortfolioCategoryCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductCategoryDetails": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalog": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalog": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FitAnalysisACH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PVBackend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PVFrontend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppTypeLevel": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "productInstanceHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ApplicationComponentText": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PortfolioCategoryIV": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PortfolioCategoryImp": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplicationType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "NewRoleName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ApplicationComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BackendSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "HANASoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleCombinedToolTipDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleOAMName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InnovationsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "IntentsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BSPNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ODataServicesCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproComponentNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TCodesCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleNameCombinedOnlyName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SAPUI5ComponentIdCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FitAnalysisACHCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FormFactorsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "UITechnologyCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "productInstanceUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ScopeItemID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HighlightedAppsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HighlightAppsSorterL1": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "HighlightAppsSorterL2": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ScopeItemDetailsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityGUIDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemGroupCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ODataV4ServiceGroupsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppLauncherTitleCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "HighlightApps": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BCMultiLanguageCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "BRMultiLanguageCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "BGMultiLanguageCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "TileMultiLanguageCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "TCMultiLanguageCombined": {
+          "type": "cds.String",
+          "length": 2147483647
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.InputFilterParam": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFilterValue": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Apps",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Details": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "P3Area": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "ShipmentCluster": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "PortfolioCategory": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BOMVersion": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "isDraft": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "isPublished": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "Transactional": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "Analytical": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "Factsheet": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ReuseComponent": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "FPM_WebDynpro": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ApplicationType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ApplicationComponent": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ProductFeatureID": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "GTMAppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMInnovationName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppOfficialName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SolutionsCapability": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InnovationStatus": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductFeatureStatus": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PFDBIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "GTMInnovationID": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppDocumentationLinkOld": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLinkOld": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppHistoryDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppHistoryDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ExtensibilityDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ExtensibilityDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppImplementationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppImplementationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ProjectPortalLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "RelatedApps": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SmartBusinessKPIDrilldown": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPPackage": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "HasURLParameters": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "URLParameters": {
+          "type": "cds.String",
+          "length": 3000
+        },
+        "AnnotationXML": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LPDCustType": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SAPUI5Type": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SemanticObject": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SemanticAction": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LPDCustRoleName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "LPDCustInstance": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalNavigationTargets": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataServiceVersion": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "AdditionalODataServices": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataServicesVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataPFCGRole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AdditionalODataPFCGRole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryODataExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AdditionalSearchConnectors": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorSearchComponent": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "AdditionalSearchConnectorSearchComponent": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimarySearchConnectorSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalSearchConnectorSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorBusinessFunctions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AdditionalSearchConnectorBusinessFunctions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproComponentName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproPackage": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproSoftwareComponent": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproPFCGRole": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "KPIID": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataServicePackage": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANARolePackage": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARoleSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARoleSoftwareComponentVersionMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ViewExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ControllerExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionOfficialNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ActivatedInstanceNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPStackUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentMininumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionOfficialNameBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ActivatedInstanceNameBackend": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SPStackBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentVersionsMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "BackendSoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductVersionOfficialNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LowerBackendReleases": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ActivatedInstanceNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SPStackHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentVersionsMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANASoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NoteCollection": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NoteDescriptions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "CrossProductSolutionID": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "CrossProductSolutionShortText": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "CrossProductStackID": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "CrossProductStackShortText": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "CrossProductStackStatus": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "isValidated": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "DeliveryModel": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BExQueryName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryDescription": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPVName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPVOfficialName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LeadingTransactionCodes": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "TransactionCodes": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "XSODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynProSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalSearchConnSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplicationComponentText": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "NumberofRelatedApps": {
+          "type": "cds.Integer"
+        },
+        "NumberofNotes": {
+          "type": "cds.Integer"
+        },
+        "NumberofHANARole": {
+          "type": "cds.Integer"
+        },
+        "NumberofHANAServices": {
+          "type": "cds.Integer"
+        },
+        "NumberOfViewExtensions": {
+          "type": "cds.Integer"
+        },
+        "NumberofOdataServices": {
+          "type": "cds.Integer"
+        },
+        "NumberofSearchComponent": {
+          "type": "cds.Integer"
+        },
+        "NumberofGTMAppName": {
+          "type": "cds.Integer"
+        },
+        "NumberofCrossProductStackShortText": {
+          "type": "cds.Integer"
+        },
+        "NumberOfControllerExtensions": {
+          "type": "cds.Integer"
+        },
+        "NumberOfPVBE": {
+          "type": "cds.Integer"
+        },
+        "NumberOfPVHANA": {
+          "type": "cds.Integer"
+        },
+        "NumberOfBackendExtensions": {
+          "type": "cds.Integer"
+        },
+        "NumberOfScreenshotLinks": {
+          "type": "cds.Integer"
+        },
+        "LowerBackendRel": {
+          "type": "cds.Integer"
+        },
+        "RelatedAppsCount": {
+          "type": "cds.Integer"
+        },
+        "NotesCount": {
+          "type": "cds.Integer"
+        },
+        "HANARolesCount": {
+          "type": "cds.Integer"
+        },
+        "HANAServicesCount": {
+          "type": "cds.Integer"
+        },
+        "ScreenshotLinksCount": {
+          "type": "cds.Integer"
+        },
+        "BackendPVCount": {
+          "type": "cds.Integer"
+        },
+        "GTMInnovationNameCount": {
+          "type": "cds.Integer"
+        },
+        "CPSShortTextCount": {
+          "type": "cds.Integer"
+        },
+        "SearchComponentCount": {
+          "type": "cds.Integer"
+        },
+        "HANAPVCount": {
+          "type": "cds.Integer"
+        },
+        "ODataServicesCount": {
+          "type": "cds.Integer"
+        },
+        "BackendExtensionsCount": {
+          "type": "cds.Integer"
+        },
+        "ProductCategoryDetails": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NumberofHanaKPIs": {
+          "type": "cds.Integer"
+        },
+        "HanaKPICount": {
+          "type": "cds.Integer"
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACHLevel2": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACHLevel2Text": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppTypeLevel": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "SolutionsCapabilityID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "NumberofReleaseGroups": {
+          "type": "cds.Integer"
+        },
+        "ReleaseGroupCount": {
+          "type": "cds.Integer"
+        },
+        "dummy_releaseGroupId": {
+          "type": "cds.Integer64"
+        },
+        "ProductCategoryToReleaseMapping": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LeadingIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "NumberofPredecessors": {
+          "type": "cds.Integer"
+        },
+        "PredecessorCount": {
+          "type": "cds.Integer"
+        },
+        "predecessor": {
+          "type": "cds.Integer64"
+        },
+        "NumberofSuccessors": {
+          "type": "cds.Integer"
+        },
+        "SuccessorCount": {
+          "type": "cds.Integer"
+        },
+        "successor": {
+          "type": "cds.Integer64"
+        },
+        "NewRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RelatedAppsByRoleCount": {
+          "type": "cds.Integer"
+        },
+        "NumberOfRelatedAppsByRole": {
+          "type": "cds.Integer"
+        },
+        "availabilityInFaaS": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "shipmentQuarter": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "UITechnology": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "GUID": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "NumberOfBusinessCatalog": {
+          "type": "cds.Integer"
+        },
+        "NumberOfBusinessGroup": {
+          "type": "cds.Integer"
+        },
+        "NumberOfBusinessRole": {
+          "type": "cds.Integer"
+        },
+        "NumberOfAdditionalIntent": {
+          "type": "cds.Integer"
+        },
+        "NumberOfApplaunchers": {
+          "type": "cds.Integer"
+        },
+        "ReportName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReportDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TTEXT": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NumberOfICFNodes": {
+          "type": "cds.Integer"
+        },
+        "NumberOfAdditionalODataServices": {
+          "type": "cds.Integer"
+        },
+        "RetrofittedSWCUI": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "RetrofittedSWCBackend": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "RetrofittedSWCHANA": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "NumberOfWDIcfNodes": {
+          "type": "cds.Integer"
+        },
+        "NumberOfAdditionalWDIcfNodes": {
+          "type": "cds.Integer"
+        },
+        "WDAAppAndConfigName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseGroupText_orig": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "NumberOfVideos": {
+          "type": "cds.Integer"
+        },
+        "NumberOfPresentations": {
+          "type": "cds.Integer"
+        },
+        "NumberOfRelatedAppsInverse": {
+          "type": "cds.Integer"
+        },
+        "AppCountPerBusinessCatalog": {
+          "type": "cds.Integer"
+        },
+        "AppCountPerBusinessRoles": {
+          "type": "cds.Integer"
+        },
+        "NumberOfSolutionURLs": {
+          "type": "cds.Integer"
+        },
+        "NumberofOdataServiceGroups": {
+          "type": "cds.Integer"
+        },
+        "NumberOfAdditionalODataServiceGroups": {
+          "type": "cds.Integer"
+        },
+        "NumberOfScopeItems": {
+          "type": "cds.Integer"
+        },
+        "CalculatedRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "highlightKey": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "releaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "BW": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "BWBackendSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BWBackendSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BWSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NumberOfBExQueries": {
+          "type": "cds.Integer"
+        },
+        "UiTechGuideLink": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "UITechGuideLinkText": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "MaintainBCLink": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Language": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "Notes": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Notes",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "ODataServices": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ODataServices",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "All_Rel": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.All_Rel",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Release_Group": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Release_Group",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Down_PortRel": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Down_PortRel",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Related_Apps": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Related_Apps",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "ProductVersions": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ProductVersions",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "HANAServices": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANAServices",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "HANAKPIs": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANAKPIs",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Extensions": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Extensions",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SearchComponent": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SearchComponent",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "HANARoles": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANARoles",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "GTMScreenshots": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScreenshotLinks",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Videos": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.Video_Links",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SolutionsCapabilityURL": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SolutionsCapabilityURL",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Presentations": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PresentationLinks",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "AppsByLeadingPV": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Successors": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "Predecessors": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SuccessorDetails": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "PredecessorDetails": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "RolesPerApp": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitBusinessRole": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessRole",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitBusinessGroup": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitBusinessCatalog": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "RelatedAppsInverse": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitTechnicalCatalogs": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitTechnicalCatalogs",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitApplauncher": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitApplauncher",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "SplitAdditionalIntents": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "ICFNodes": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ICFNodes",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "WebDynproICFNodes": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.WebDynproICFNodes",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "RequiredODataServices": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServices",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "RequiredODataServiceGroups": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServiceGroups",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "RelAppsMasterList": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "BusinessCatalogPerApp": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalogPerApp",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "ScopeItemPerApp": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "ScopeItems": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems",
+          "cardinality": {
+            "max": "*"
+          }
+        },
+        "BExQueries": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.BExQueries",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation_CE": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "Id": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "ReleaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "ReleaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "ReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ReleaseGroupId": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "ReleaseGroupName": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation_CE",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "InpRoleName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "RoleName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 2000
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRoleParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "InpRoleName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpScopeItem": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "scopeItemId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItemParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpScopeItem": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 2000
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "RelatedAppsByRole": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RolesPerAppParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "scopeItemId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "RelatedAppsByScopeItem": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerAppParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalogPerApp": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "BusinessCatalog": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RelatedAppsByBusinessCatalog": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriID": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBCat": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "AppName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalog": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalogParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriID": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBCat": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessRole": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "BusinessRoleName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleID": {
+          "key": true,
+          "type": "cds.String",
+          "length": 2000
+        },
+        "BusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "isLeading": {
+          "type": "cds.String",
+          "length": 1
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitTechnicalCatalogs": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "TechincalCatalog": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechincalCatalogDescription": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "BusinessGroupName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "guid": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BusinessGroupDescription": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroupParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "RequiredFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "relationType": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverseParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "RequiredFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 10
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "BusinessCatalogName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "guid": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BusinessCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalogParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitApplauncher": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "guid": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "ApplauncherKey": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TileInstanceID": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Title": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Subtitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Information": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplauncherParams": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "AddIntSemObj": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AddIntSemAction": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "MAPPINGSIGNATUREKEY": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "MAPPINGSIGNATUREVALUE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "guid": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntentsParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "inpreleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "PrimaryPVOfficialName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPVParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpfioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Down_PortRel": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "DOWNPORTREL": {
+          "type": "cds.String",
+          "length": 30
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.All_Rel": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "allReleases": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "releaseGroupId": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Release_Group": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "releaseGroupId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "allReleases": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Related_Apps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "FioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "relationType": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "currentFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "currentReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "requiredReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ProductVersions": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "pvNameUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PAMLinkUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "pvOfficialNameUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SPStackUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "productInstanceUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RequiredProductVersionsUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "swcvUI": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "minSpLevelUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ProductVersionTypeUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "pvNameBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PAMLinkBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "pvOfficialNameBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SPStackBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "productInstanceBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RequiredProductVersionsBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "swcvBE": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "minSpLevelBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ProductVersionTypeBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "pvNameHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PAMLinkHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "pvOfficialNameHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SPStackHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "productInstanceHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RequiredProductVersionsHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "swcvHANA": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "minSpLevelHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ProductVersionTypeHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "appFirstRelease": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "appLastRelease": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "hasLowerBackendReleases": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "isPrincipal": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "PrimaryPVName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPVOfficialName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPAMLink": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Releases": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "externalName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "releaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "releaseType": {
+          "type": "cds.String",
+          "length": 50
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Notes": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "NoteDescription": {
+          "key": true,
+          "type": "cds.String",
+          "length": 2000
+        },
+        "NoteNumber": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ApplicableSystem": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sortKey": {
+          "type": "cds.String",
+          "length": 5
+        },
+        "type": {
+          "type": "cds.String",
+          "length": 10
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.HANARoles": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "HANARole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "HANARolePackage": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Industry": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.HANAServices": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "KPIValue": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "ServiceValue": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "ServiceName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "KPI": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "Package": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "GUID": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.HANAKPIs": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "KPI": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "count": {
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Extensions": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "appId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Type": {
+          "key": true,
+          "type": "cds.String",
+          "length": 150
+        },
+        "Name": {
+          "key": true,
+          "type": "cds.String",
+          "length": 150
+        },
+        "File": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GUID": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "SubType": {
+          "type": "cds.String",
+          "length": 50
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ODataServices": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "TechnicalName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PFCGRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1500
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "NameSpace": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "Version": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "GUID": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "SoftwareComponentName": {
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SearchComponent": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "SearchModel": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "SearchComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ApplicationComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SearchConnType": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "BusinessFunctionName": {
+          "type": "cds.String",
+          "length": 50
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScreenshotLinks": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "link": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Sequence": {
+          "type": "cds.String",
+          "length": 10
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SolutionsCapabilityURL": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "SolutionURL": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionId": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "SolutionName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SolutionGUID": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Video_Links": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "title": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Sequence": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "link": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PresentationLinks": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "title": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "link": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Sequence": {
+          "type": "cds.String",
+          "length": 10
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.HomePageScreenshotLinks": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "appId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "appName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "roleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "url": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "filterKey": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sequenceNumber": {
+          "type": "cds.Integer"
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.BExQueries": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "FioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "BexQueryName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReleaseID": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.BExQueriesParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.BExQueries",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "predecessor": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "predecessorName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetailsParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "successor": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "successorName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetailsParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "inpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "successor": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "predecessor": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "successorReleaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "predecessorReleaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "successorName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "successorReleaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "predecessorName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "predecessorReleaseId": {
+          "type": "cds.String",
+          "length": 30
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ICFNodes": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "BSPName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "AppName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BSPApplicationURL": {
+          "key": true,
+          "type": "cds.String",
+          "length": 300
+        },
+        "isAdditional": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "SAPUI5ComponentId": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.WebDynproICFNodes": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "isAdditional": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "WebDynproICFPath": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproComponentName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproPFCGRole": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "WDAAppAndConfigName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "WebDynproComponent": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServices": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "TechnicalName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "Version": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "isAdditional": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "PFCGRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1500
+        },
+        "SoftwareComponentName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NameSpace": {
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServiceGroups": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "serviceGroupName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
+        "isAdditional": {
+          "type": "cds.Integer"
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Column": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Type": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Prio": {
+          "type": "cds.Integer"
+        },
+        "Description": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterListParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppName": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "title": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RoleNames": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.LOB": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ProductCategories": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationComponent": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "val": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationComponentL2": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "val": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Databases": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PVBackend": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PVFrontend": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationType": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "level": {
+          "type": "cds.String",
+          "length": 10
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.TechnicalCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "MultiLangDescription": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SWCFrontend": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SWCBackend": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SWCHana": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PPV": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseGroupText": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SystemReadiness": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "SystemReadiness": {
+          "key": true,
+          "type": "cds.String",
+          "length": 32
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseGroups": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "releaseGroupId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PortfolioCategory": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FormFactor": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 100
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FilterMasterList": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "columnName": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "mappingKey": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "appListFilterId": {
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FaaSEditions": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SolutionCapability": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "legacyID": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SolutionCapabilityLegacyID": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Innovations": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.Intents": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.SAPUI5Component": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ODataServicesFilter": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsFilter": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "group": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsFilterGroup": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 1000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.BSPName": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.UITechnology": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "scopeItemId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "scopeItemDesc": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "scopeItemGroup": {
+          "key": true,
+          "type": "cds.String",
+          "length": 200
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsParameters": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpFioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpReleaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.HighlightedAppsFilter": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "description": {
+          "type": "cds.String",
+          "length": 500
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpBCatOrRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "FioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.InpBusinessCatalog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpBCatOrRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessCatalog",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessRoles": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpBCatOrRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "FioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.InpBusinessRoles": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "InpBCatOrRole": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InpRGT": {
+          "key": true,
+          "type": "cds.String",
+          "length": 50
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessRoles",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppLauncherTitleFilter": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "key": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "title": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FitResult": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "fioriId": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseRank": {
+          "type": "cds.Integer"
+        },
+        "BackendProductVersion": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "BackendProductVersionOfficial": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BackendProductVersionStack": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "BackendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "BackendMinSP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BackendSP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "Backend_Cust_SC": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "Backend_Cust_Release": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "Backend_Cust_SPLevel": {
+          "type": "cds.String",
+          "length": 15
+        },
+        "BackendTRMatch": {
+          "type": "cds.Integer"
+        },
+        "BackendMinSPMatch": {
+          "type": "cds.Integer"
+        },
+        "BackendSPMatch": {
+          "type": "cds.Integer"
+        },
+        "BackendRating": {
+          "type": "cds.Integer"
+        },
+        "FrontendProductVersion": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "FrontendProductVersionOfficial": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FrontendProductVersionStack": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "FrontendMinSP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "FrontendSP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "Frontend_Cust_SC": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "Frontend_Cust_Release": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "Frontend_Cust_SPLevel": {
+          "type": "cds.String",
+          "length": 15
+        },
+        "FrontendTRMatch": {
+          "type": "cds.Integer"
+        },
+        "FrontendMinSPMatch": {
+          "type": "cds.Integer"
+        },
+        "FrontendSPMatch": {
+          "type": "cds.Integer"
+        },
+        "FrontendRating": {
+          "type": "cds.Integer"
+        },
+        "HANAProductVersion": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "HANAProductVersionOfficial": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "HANAProductVersionStack": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "HANASoftwareComponent": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "HANAMinSP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "HANASP": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "HANA_Cust_SC": {
+          "type": "cds.String",
+          "length": 256
+        },
+        "HANA_Cust_Release": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "HANA_Cust_SPLevel": {
+          "type": "cds.String",
+          "length": 15
+        },
+        "HANATRMatch": {
+          "type": "cds.Integer"
+        },
+        "HANAMinSPMatch": {
+          "type": "cds.Integer"
+        },
+        "HANASPMatch": {
+          "type": "cds.Integer"
+        },
+        "HANARating": {
+          "type": "cds.Integer"
+        },
+        "FinalRating": {
+          "type": "cds.Integer"
+        },
+        "ACH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACH_WO_FIO": {
+          "type": "cds.String",
+          "length": 64
+        },
+        "ACH_L1": {
+          "type": "cds.String",
+          "length": 64
+        },
+        "ACH_L2": {
+          "type": "cds.String",
+          "length": 64
+        },
+        "ACH_TEXT": {
+          "type": "cds.String",
+          "length": 60
+        },
+        "ACH_WO_FIO_TEXT": {
+          "type": "cds.String",
+          "length": 60
+        },
+        "ACH_L1_TEXT": {
+          "type": "cds.String",
+          "length": 60
+        },
+        "ACH_L2_TEXT": {
+          "type": "cds.String",
+          "length": 60
+        },
+        "ACH_WITH_DESC": {
+          "type": "cds.String",
+          "length": 120
+        },
+        "AchL2Score": {
+          "type": "cds.Integer"
+        },
+        "AchScore": {
+          "type": "cds.Integer"
+        },
+        "AchTxScore": {
+          "type": "cds.Integer"
+        },
+        "TRANSACTION_MATCH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "Relevance": {
+          "type": "cds.Integer"
+        },
+        "DatabaseMatch": {
+          "type": "cds.Integer"
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "CUST_DATABASE": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "SystemReadiness": {
+          "type": "cds.String",
+          "length": 14
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ReleaseName": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "GTMAppDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "ScreenshotLinks": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TRANSACTION_TEXT": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "NoteCollection": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NoteDescriptions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendActivatedInstance": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FrontendActivatedInstance": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "HANAActivatedInstance": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BusinessCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "LeadingIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LeadingLob": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "TechnicalCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SemanticObject": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SemanticAction": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Title": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Subtitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "CombinedTitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PortfolioCategory": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "PrimaryODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataServiceVersion": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "AdditionalODataServices": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataServicesVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SAPUI5ComponentId": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WDAAppAndConfigName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "UITechnology": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "AdditionalIntents": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryPVOfficialName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "availabilityInFaaS": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "SolutionsCapabilityID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PortfolioCategoryIV": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PortfolioCategoryImp": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PFDBIndustry": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMInnovationID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMInnovationName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapability": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendProductVersionNumber": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "FrontendProductVersionStackNumber": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendProductVersionNumber": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "BackendProductVersionStackNumber": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANAProductVersionNumber": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "HANAProductVersionStackNumber": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "ScopeItemGroup": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityGUID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "highlightKey": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "R": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "NR": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "I": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "NI": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PI": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleNameBusinessDescCombo": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BexQueryName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LeadingBusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LeadingBusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FitAnalysisResult": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 20
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.FitResult",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppListResult_CE": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "fioriId": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ACHLevel2": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SemanticObject": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SemanticAction": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AdditionalODataServices": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataServicesVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductVersionNameBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PVBackendAll": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANAProductVersion": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "NoteCollection": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryPVOfficialName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "FrontendProductVersionStack": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendActivatedInstance": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "FrontendMinSP": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "BackendProductVersionStack": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendActivatedInstance": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANAProductVersionStack": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANAActivatedInstance": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PVFrontendAll": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleNameBusinessDescCombo": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ApplicationType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "GTMInnovationName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMInnovationID": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PFDBIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "Description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "BackendMinSP": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANAMinSP": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SolutionsCapabilityID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACH_L2_TEXT": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseRank": {
+          "type": "cds.Decimal",
+          "precision": 5,
+          "scale": 2
+        },
+        "TRANSACTION_MATCH": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PortfolioCategoryIV": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PortfolioCategoryImp": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "UITechnology": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "AdditionalIntents": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SAPUI5ComponentId": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WDAConfiguration": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "KPIID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataServiceVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PortfolioCategory": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendProductVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMAppDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "availabilityInFaaS": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SolutionsCapability": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScreenshotLinks": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "highlightKey": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "SolutionsCapabilityGUID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemGroup": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Title": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Subtitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "CombinedTitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "BackendSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "HANASoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "BexQueryName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LeadingBusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LeadingBusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppListResult": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppListResult_CE",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "R": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsOnly": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriAppsAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "RG": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriApps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriAppsAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.InstalledAppsInSampleAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "I": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.InstalledApps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.InstalledAppsInSampleAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.NIAppsInSampleAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "NI": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.NotInstalledApps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.NIAppsInSampleAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PIAppsInSampleAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "PI": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.PartlyInstalledApps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.PIAppsInSampleAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.NRAppsInSampleAnalysis": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "localId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 40
+        },
+        "NR": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.NotRelevantApps": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "HanaInput": {
+          "key": true,
+          "type": "cds.String",
+          "length": 100
+        },
+        "InpBE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpFE": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "InpUsageProf": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "sWhereClause": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Results": {
+          "type": "cds.Association",
+          "target": "SingleApp.fix.externalViewer.services.SingleApp.NRAppsInSampleAnalysis",
+          "cardinality": {
+            "max": "*"
+          }
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.UsageLog": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "xsSessionId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 32
+        },
+        "activityType": {
+          "key": true,
+          "type": "cds.String",
+          "length": 5
+        },
+        "activityKey": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "activityValue": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "activityTime": {
+          "type": "cds.Date"
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.FuzzySearch": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "fioriId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "releaseId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 30
+        },
+        "P3Area": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "ShipmentCluster": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "PortfolioCategory": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GUID": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ExternalReleaseName": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "BOMVersion": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "isDraft": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "isPublished": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "Transactional": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "Analytical": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "Factsheet": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ReuseComponent": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "FPM_WebDynpro": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "AppType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Description": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ApplicationComponent": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ProductFeatureID": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "GTMAppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMAppDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "GTMInnovationName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "GTMRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppKeyFeatures": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "AppOfficialName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SolutionsCapability": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InnovationStatus": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductFeatureStatus": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PFDBIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "GTMInnovationID": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppDocumentationLinkOld": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLinkOld": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ConfigurationDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppHistoryDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppHistoryDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ExtensibilityDocumentationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ExtensibilityDocumentationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppImplementationLinkKW": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "AppImplementationLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "ProjectPortalLink": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "RelatedApps": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SmartBusinessKPIDrilldown": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPPackage": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "HasURLParameters": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "URLParameters": {
+          "type": "cds.String",
+          "length": 3000
+        },
+        "AnnotationXML": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LPDCustType": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SAPUI5Type": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "SemanticObject": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SemanticAction": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LPDCustRoleName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "LPDCustInstance": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BusinessRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalogDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalNavigationTargets": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataServiceVersion": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "AdditionalODataServices": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataServicesVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataPFCGRole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AdditionalODataPFCGRole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryODataExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimaryODataSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AdditionalSearchConnectors": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorSearchComponent": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "AdditionalSearchConnectorSearchComponent": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "PrimarySearchConnectorSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalSearchConnectorSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnectorBusinessFunctions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AdditionalSearchConnectorBusinessFunctions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproComponentName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproPackage": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproSoftwareComponent": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "WebDynproSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproPFCGRole": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "KPIID": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataServiceName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataServicePackage": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "XSODataSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARole": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANARolePackage": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARoleSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANARoleSoftwareComponentVersionMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ViewExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ControllerExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataExtensionPoints": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionOfficialNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNumberUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ActivatedInstanceNameUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPStackUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPStackNumberUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeUI": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentMininumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FrontendSoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionOfficialNameBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNumberBackend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ActivatedInstanceNameBackend": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SPStackBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPStackNumberBackend": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeBE": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentVersionsMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "BackendSoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductVersionOfficialNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductVersionNumberHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LowerBackendReleases": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ActivatedInstanceNameHANA": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SPStackHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPStackNumberHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PAMLinkHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RequiredProductVersionsHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductVersionTypeHANA": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentVersionsMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "HANASoftwareComponentPublicName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASoftwareComponentDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NoteCollection": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NoteDescriptions": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "CrossProductSolutionID": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "CrossProductSolutionShortText": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "CrossProductStackID": {
+          "type": "cds.String",
+          "length": 20
+        },
+        "CrossProductStackShortText": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "CrossProductStackStatus": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "isValidated": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "DeliveryModel": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BExQueryName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryDescription": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPVName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPVOfficialName": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LeadingTransactionCodes": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "TransactionCodes": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "XSODataSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynProSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySearchConnSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalSearchConnSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplicationComponentText": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "KM": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "DocuCoordinator": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "QELead": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Translator": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Architect": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Designer": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "LanguageEditor": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategoryDetails": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FitAnalysisACH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "FitAnalysisTransactionCodes": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "ACHLevel2": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACHLevel2Text": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AppTypeLevel": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ACHLevel1": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "ACHLevel1Text": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SolutionsCapabilityID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimarySPStack": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "RoleID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "NewRoleName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleOwner": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ArtifactId": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "NexusAppVersion": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "GroupId": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "InnovationGUID": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "UITechnology": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "ProductCategoryToReleaseMapping": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PFTechName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "AIOLink": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PfdbSWC": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "IndustrySegment": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "LeadingIndustry": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "LeadingLob": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PrimaryPAMLink": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "availabilityInFaaS": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BusinessRoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "shipmentQuarter": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PortfolioCategoryIV": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PortfolioCategoryImp": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "Title": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Subtitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppLauncherTitle": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "Information": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalIntents": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReportName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ReportDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AdditionalIntentParams": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplauncherParams": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TTEXT": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleCombinedToolTipDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RetrofittedSWCUI": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "RetrofittedSWCBackend": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "RetrofittedSWCHANA": {
+          "type": "cds.String",
+          "length": 2000
+        },
+        "BusinessRoleOAMName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SPRINUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SPRINBackend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "SPRINHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "WDAAppAndConfigName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "SAPUI5ComponentId": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseGroupText_orig": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "ScopeItemID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemDescription": {
+          "type": "cds.String",
+          "length": 2147483647
+        },
+        "SolutionsCapabilityGUID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemGroup": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BW": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "BWBackendSoftwareComponentVersion": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BWBackendSoftwareComponentMinimumSPLevel": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BWSP": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TileInstanceID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "CombinedTitle": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    },
+    "SingleApp.fix.externalViewer.services.SingleApp.AppsOnSearch": {
+      "kind": "entity",
+      "@cds.persistence.skip": true,
+      "elements": {
+        "appId": {
+          "key": true,
+          "type": "cds.String",
+          "length": 500
+        },
+        "productInstanceUI": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "productInstanceBE": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "releaseGroupText": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "releaseId": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "releaseName": {
+          "type": "cds.String",
+          "length": 200
+        },
+        "otherReleases": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppNameAll": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityIDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "availabilityInFaaSCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "LobCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "IndustryCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PCDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACHCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ACHLevel2Combined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "DatabaseCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PrimaryPVOfficialNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PVFrontendCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PVBackendCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppTypeCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalogNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FrontendSCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HANASCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BackendSCVCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "releaseGroupTextCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "PortfolioCategoryCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ProductCategoryDetails": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessCatalog": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TechnicalCatalog": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FitAnalysisACH": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PVBackend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PVFrontend": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppTypeLevel": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "productInstanceHANA": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "ApplicationComponentText": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "FormFactors": {
+          "type": "cds.String",
+          "length": 100
+        },
+        "PortfolioCategoryIV": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "PortfolioCategoryImp": {
+          "type": "cds.String",
+          "length": 1000
+        },
+        "AppName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ApplicationType": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BSPName": {
+          "type": "cds.String",
+          "length": 50
+        },
+        "BSPApplicationURL": {
+          "type": "cds.String",
+          "length": 300
+        },
+        "NewRoleName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "GTMLoBName": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ProductCategory": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "ApplicationComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "Database": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "BackendSoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "FrontendSoftwareComponent": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "HANASoftwareComponentVersions": {
+          "type": "cds.String",
+          "length": 500
+        },
+        "RoleCombinedToolTipDescription": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleOAMName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "InnovationsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "IntentsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BSPNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ODataServicesCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "WebDynproComponentNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "TCodesCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "RoleNameCombinedOnlyName": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessGroupDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BExQueryDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SAPUI5ComponentIdCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "BusinessRoleDescriptionCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FitAnalysisACHCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "FormFactorsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "UITechnologyCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppNameCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemID": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HighlightedAppsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "HighlightAppsSorterL1": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "HighlightAppsSorterL2": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "ScopeItemDetailsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "SolutionsCapabilityGUIDCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ScopeItemGroupCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "ODataV4ServiceGroupsCombined": {
+          "type": "cds.String",
+          "length": 5000
+        },
+        "AppLauncherTitleCombined": {
+          "type": "cds.String",
+          "length": 5000
+        }
+      }
+    }
+  }
+}
