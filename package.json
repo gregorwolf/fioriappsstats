@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rimraf gen && mkdir -p gen/abap && mkdir -p gen/db/csv && node index"
+    "start": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index"
   },
   "keywords": [
     "SAP",
