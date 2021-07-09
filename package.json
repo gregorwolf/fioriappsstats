@@ -50,9 +50,13 @@
   },
   "cds": {
     "requires": {
-      "SingleApp.fix.externalViewer.services.SingleApp": {
+      "FioriAppsLibrary": {
         "kind": "odata",
-        "model": "srv/external/SingleApp"
+        "model": "srv/external/SingleApp",
+        "credentials": {
+          "path": "/sap/fix/externalViewer/services/SingleApp.xsodata/",
+          "url": "https://fioriappslibrary.hana.ondemand.com"
+        }
       }
     }
   }

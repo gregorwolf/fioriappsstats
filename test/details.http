@@ -2,3 +2,10 @@
 GET http://localhost:4004/catalog/Details
   ?$select=AppName,RequiredODataServices
   &$expand=RequiredODataServices
+
+
+###
+POST http://localhost:4004/catalog/loadDataFromSAP
+Content-Type: application/json
+
+{}
