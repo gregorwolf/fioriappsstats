@@ -1,12 +1,18 @@
-var AppsData = require("./data/Apps.json");
-AppsData.d.results.forEach(cleanObject);
+var DetailsData = require("./data/Details.json");
+DetailsData.d.results.forEach(cleanObject);
+var RequiredODataServicessData = require("./data/RequiredODataServices.json");
+RequiredODataServicessData.d.results.forEach(cleanObject);
 
 module.exports = (db) => {
-  const { Apps } = db.entities("CatalogService");
+  const { Details, RequiredODataServices } = db.entities("CatalogService");
 
   return cds.run([
-    DELETE.from(Apps).where("1 = 1"),
-    INSERT.into(Apps).rows(AppsData.d.results),
+    DELETE.from(Details).where("1 = 1"),
+    INSERT.into(Details).rows(DetailsData.d.results),
+    DELETE.from(RequiredODataServices).where("1 = 1"),
+    INSERT.into(RequiredODataServices).rows(
+      RequiredODataServicessData.d.results
+    ),
   ]);
 };
 

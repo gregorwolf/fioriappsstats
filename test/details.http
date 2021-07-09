@@ -1,0 +1,4 @@
+###
+GET http://localhost:4004/catalog/Details
+  ?$select=AppName,RequiredODataServices
+  &$expand=RequiredODataServices

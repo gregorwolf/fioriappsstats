@@ -1,0 +1,21 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "type": "sap.fix.externalViewer.services.SingleApp.RequiredODataServicesType",
+          "uri": "https://fioriappslibrary.hana.ondemand.com:443/sap/fix/externalViewer/services/SingleApp.xsodata/RequiredODataServices(fioriId='F0862',releaseId='S20OP',TechnicalName='%2FIWPGW%2FTASKPROCESSING',Version='0002',isAdditional=0,PFCGRole='%2FIWPGW%2FRT_WF_USR',SoftwareComponentName='SAP_GWFND%20755')"
+        },
+        "fioriId": "F0862",
+        "releaseId": "S20OP",
+        "AppName": "My Inbox",
+        "TechnicalName": "/IWPGW/TASKPROCESSING",
+        "NameSpace": "/IWPGW/TGW",
+        "Version": "0002",
+        "isAdditional": 0,
+        "PFCGRole": "/IWPGW/RT_WF_USR",
+        "SoftwareComponentName": "SAP_GWFND 755"
+      }
+    ]
+  }
+}

@@ -2,6 +2,6 @@ using {db} from '../db/data-model';
 
 service CatalogService {
 
-  entity Apps as projection on db.Apps;
-
+  entity Details               as projection on db.Details;
+  entity RequiredODataServices as projection on db.RequiredODataServices;
 }
