@@ -8,6 +8,7 @@
   "private": false,
   "dependencies": {
     "@sap/cds": "^5",
+    "date-fns": "^2.22.1",
     "dustfs": "0.0.7",
     "express": "^4",
     "html-entities": "^2.3.2",

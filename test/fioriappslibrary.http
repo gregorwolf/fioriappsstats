@@ -1,10 +1,19 @@
-###
+### Search for Fiori Apps
 GET https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata/InputFilterParam(InpFilterValue='1NA')/Results
   ?$format=json
   &$top=10
   &$inlinecount=allpages
   &$filter=(substringof('$SAP Fiori (SAPUI5)$',UITechnologyCombined) or substringof('$SAP Fiori app variant$',UITechnologyCombined) or substringof('$SAP Fiori elements$',UITechnologyCombined) or substringof('$SAP Fiori elements for CoPilot$',UITechnologyCombined) or substringof('$SAP Fiori elements: Overview Page$',UITechnologyCombined) or substringof('$SAP Fiori: Analysis Path Framework (APF)$',UITechnologyCombined) or substringof('$SAP Fiori: Design Studio$',UITechnologyCombined) or substringof('$SAP Fiori: Generic Application Log Framework$',UITechnologyCombined) or substringof('$SAP Fiori: Generic Configuration Framework$',UITechnologyCombined) or substringof('$SAP Fiori: Generic Job Scheduling Framework$',UITechnologyCombined) or substringof('$SAP Fiori: Manage Workflow$',UITechnologyCombined) or substringof('$SAP Fiori: My Inbox$',UITechnologyCombined) or substringof('$SAP Fiori: SAP Smart Business generic drill down app$',UITechnologyCombined) or substringof('$SAP Fiori: SAP Smart Business tile %26 custom drill down app$',UITechnologyCombined))
-###
+# appId eq 'F0862' and 
+
+### Search by OData Service
+GET https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata/InputFilterParam(InpFilterValue='1NA')/Results
+  ?$format=json
+  &$top=10
+  &$filter=substringof(%27%24%2fAMR%2fOD_BASKET_SRV%24%27,ODataServicesCombined)
+  &$inlinecount=allpages
+
+### Read Specific App
 GET https://fioriappslibrary.hana.ondemand.com/sap/fix/externalViewer/services/SingleApp.xsodata/Details(fioriId='F0862',releaseId='S20OP')
   ?$format=json
   &$select=AppName,RequiredODataServices
