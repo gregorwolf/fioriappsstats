@@ -57,6 +57,10 @@
           "path": "/sap/fix/externalViewer/services/SingleApp.xsodata/",
           "url": "https://fioriappslibrary.hana.ondemand.com"
         }
+      },
+      "db": {
+        "kind": "sqlite",
+        "model": "*"
       }
     }
   }
