@@ -17,4 +17,17 @@ entity RequiredODataServices : external.RequiredODataServices {
   @Analytics.Measure   : true
   @Aggregation.default : #SUM
   serviceCounter : Integer default 1;
+  to_Details     : Association to one Details;
 }
+
+annotate RequiredODataServices with {
+  fioriId               @title : 'Fiori ID';
+  releaseId             @title : 'Release ID';
+  AppName               @title : 'App Name';
+  TechnicalName         @title : 'Technical Name';
+  NameSpace             @title : 'Name Space';
+  Version               @title : 'Version';
+  isAdditional          @title : 'is Additional';
+  PFCGRole              @title : 'PFCG Role';
+  SoftwareComponentName @title : 'Software Component Name';
+};
