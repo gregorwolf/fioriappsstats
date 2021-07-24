@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "creator": "cds-dk 4.3.1"
+  },
+  "$version": "2.0",
   "definitions": {
     "SingleApp.fix.externalViewer.services.SingleApp": {
       "kind": "service"
@@ -3533,13 +3537,14 @@
           "type": "cds.String",
           "length": 1000
         },
+        "NameSpace": {
+          "key": true,
+          "type": "cds.String",
+          "length": 1000
+        },
         "AppName": {
           "type": "cds.String",
           "length": 5000
-        },
-        "NameSpace": {
-          "type": "cds.String",
-          "length": 1000
         }
       }
     },

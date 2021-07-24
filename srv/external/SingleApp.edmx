@@ -1134,6 +1134,7 @@
           <PropertyRef Name="isAdditional" />
           <PropertyRef Name="PFCGRole" />
           <PropertyRef Name="SoftwareComponentName" />
+          <PropertyRef Name="NameSpace" />
         </Key>
         <Property Name="fioriId" Type="Edm.String" Nullable="false" MaxLength="500" sap:label="fioriId" sap:aggregation-role="dimension" />
         <Property Name="releaseId" Type="Edm.String" Nullable="false" MaxLength="200" sap:label="releaseId" sap:aggregation-role="dimension" />
