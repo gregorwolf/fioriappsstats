@@ -1,0 +1,31 @@
+## Generated mta.yaml based on template version 0.4.0
+## appName = fioriappsstats
+## language=nodejs; multitenant=false
+## approuter=
+_schema-version: '3.1'
+ID: fioriappsstats
+version: 0.0.1
+description: "Fiori Apps Library Statistics"
+parameters:
+  enable-parallel-deployments: true
+   
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install --production
+      - cds build
+      - cp sqlite.db gen/srv
+
+modules:
+ # --------------------- SERVER MODULE ------------------------
+ - name: fioriappsstats-srv
+ # ------------------------------------------------------------
+   type: nodejs
+   path: gen/srv
+   parameters:
+     buildpack: nodejs_buildpack
+   provides:
+    - name: srv-api      # required by consumers of CAP services (e.g. approuter)
+      properties:
+        srv-url: ${default-url}

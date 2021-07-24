@@ -12,16 +12,16 @@
     "express": "^4",
     "html-entities": "^2.3.2",
     "odata-client": "^0.6.15",
+    "sqlite3": "^5.0.2",
     "xlsx": "^0.17.0"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
-    "sqlite3": "^5.0.2"
+    "rimraf": "^3.0.2"
   },
   "scripts": {
+    "start": "export NODE_ENV=development && cds run",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:generator": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index",
-    "start": "cds run"
+    "start:generator": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -61,6 +61,10 @@
       "db": {
         "kind": "sqlite",
         "model": "*"
+      },
+      "SingleApp.fix.externalViewer.services.SingleApp": {
+        "kind": "odata-v2",
+        "model": "srv/external/SingleApp"
       }
     }
   }
