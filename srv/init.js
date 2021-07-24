@@ -4,7 +4,7 @@ var RequiredODataServicessData = require("./data/RequiredODataServices.json");
 RequiredODataServicessData.d.results.forEach(cleanObject);
 
 module.exports = (db) => {
-  const { Details, RequiredODataServices } = db.entities("CatalogService");
+  const { Details, RequiredODataServices } = db.entities;
 
   return cds.run([
     DELETE.from(Details).where("1 = 1"),
