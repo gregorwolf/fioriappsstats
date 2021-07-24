@@ -1,10 +1,7 @@
 const cds = require("@sap/cds");
-// const { cleanObject } = require("./helper");
+const { cleanObject } = require("./helper");
 const thisApplication = "fioriappsstats";
 const DEBUG = cds.debug(thisApplication);
-
-// Does need destination service
-// const cdse = require("cdse")
 
 module.exports = cds.service.impl(async (srv) => {
   const fioriAppsLibrary = await cds.connect.to("FioriAppsLibrary");
