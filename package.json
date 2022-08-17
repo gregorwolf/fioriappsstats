@@ -13,7 +13,7 @@
     "express": "^4",
     "html-entities": "^2.3.2",
     "odata-client": "^0.7.1",
-    "sqlite3": "^5.0.2",
+    "sqlite3": "^5.0.11",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
