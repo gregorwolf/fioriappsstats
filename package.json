@@ -12,9 +12,9 @@
     "dustfs": "0.0.7",
     "express": "^4",
     "html-entities": "^2.3.2",
-    "odata-client": "^0.6.15",
+    "odata-client": "^0.7.1",
     "sqlite3": "^5.0.2",
-    "xlsx": "^0.17.0"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
