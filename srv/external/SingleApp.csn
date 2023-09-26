@@ -4,10 +4,10 @@
   },
   "$version": "2.0",
   "definitions": {
-    "SingleApp.fix.externalViewer.services.SingleApp": {
+    "FioriAppsLibrary": {
       "kind": "service"
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Apps": {
+    "FioriAppsLibrary.Apps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -378,7 +378,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.InputFilterParam": {
+    "FioriAppsLibrary.InputFilterParam": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -389,14 +389,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Apps",
+          "target": "FioriAppsLibrary.Apps",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Details": {
+    "FioriAppsLibrary.Details": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1386,273 +1386,273 @@
         },
         "Notes": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Notes",
+          "target": "FioriAppsLibrary.Notes",
           "cardinality": {
             "max": "*"
           }
         },
         "ODataServices": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ODataServices",
+          "target": "FioriAppsLibrary.ODataServices",
           "cardinality": {
             "max": "*"
           }
         },
         "All_Rel": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.All_Rel",
+          "target": "FioriAppsLibrary.All_Rel",
           "cardinality": {
             "max": "*"
           }
         },
         "Release_Group": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Release_Group",
+          "target": "FioriAppsLibrary.Release_Group",
           "cardinality": {
             "max": "*"
           }
         },
         "Down_PortRel": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Down_PortRel",
+          "target": "FioriAppsLibrary.Down_PortRel",
           "cardinality": {
             "max": "*"
           }
         },
         "Related_Apps": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Related_Apps",
+          "target": "FioriAppsLibrary.Related_Apps",
           "cardinality": {
             "max": "*"
           }
         },
         "ProductVersions": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ProductVersions",
+          "target": "FioriAppsLibrary.ProductVersions",
           "cardinality": {
             "max": "*"
           }
         },
         "HANAServices": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANAServices",
+          "target": "FioriAppsLibrary.HANAServices",
           "cardinality": {
             "max": "*"
           }
         },
         "HANAKPIs": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANAKPIs",
+          "target": "FioriAppsLibrary.HANAKPIs",
           "cardinality": {
             "max": "*"
           }
         },
         "Extensions": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Extensions",
+          "target": "FioriAppsLibrary.Extensions",
           "cardinality": {
             "max": "*"
           }
         },
         "SearchComponent": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SearchComponent",
+          "target": "FioriAppsLibrary.SearchComponent",
           "cardinality": {
             "max": "*"
           }
         },
         "HANARoles": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.HANARoles",
+          "target": "FioriAppsLibrary.HANARoles",
           "cardinality": {
             "max": "*"
           }
         },
         "GTMScreenshots": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScreenshotLinks",
+          "target": "FioriAppsLibrary.ScreenshotLinks",
           "cardinality": {
             "max": "*"
           }
         },
         "Videos": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.Video_Links",
+          "target": "FioriAppsLibrary.Video_Links",
           "cardinality": {
             "max": "*"
           }
         },
         "SolutionsCapabilityURL": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SolutionsCapabilityURL",
+          "target": "FioriAppsLibrary.SolutionsCapabilityURL",
           "cardinality": {
             "max": "*"
           }
         },
         "Presentations": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PresentationLinks",
+          "target": "FioriAppsLibrary.PresentationLinks",
           "cardinality": {
             "max": "*"
           }
         },
         "AppsByLeadingPV": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV",
+          "target": "FioriAppsLibrary.AppsByLeadingPV",
           "cardinality": {
             "max": "*"
           }
         },
         "Successors": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor",
+          "target": "FioriAppsLibrary.PredecessorSuccessor",
           "cardinality": {
             "max": "*"
           }
         },
         "Predecessors": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor",
+          "target": "FioriAppsLibrary.PredecessorSuccessor",
           "cardinality": {
             "max": "*"
           }
         },
         "SuccessorDetails": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails",
+          "target": "FioriAppsLibrary.SuccessorDetails",
           "cardinality": {
             "max": "*"
           }
         },
         "PredecessorDetails": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails",
+          "target": "FioriAppsLibrary.PredecessorDetails",
           "cardinality": {
             "max": "*"
           }
         },
         "RolesPerApp": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp",
+          "target": "FioriAppsLibrary.RolesPerApp",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitBusinessRole": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessRole",
+          "target": "FioriAppsLibrary.SplitBusinessRole",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitBusinessGroup": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup",
+          "target": "FioriAppsLibrary.SplitBusinessGroup",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitBusinessCatalog": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog",
+          "target": "FioriAppsLibrary.SplitBusinessCatalog",
           "cardinality": {
             "max": "*"
           }
         },
         "RelatedAppsInverse": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse",
+          "target": "FioriAppsLibrary.RelatedAppsInverse",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitTechnicalCatalogs": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitTechnicalCatalogs",
+          "target": "FioriAppsLibrary.SplitTechnicalCatalogs",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitApplauncher": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitApplauncher",
+          "target": "FioriAppsLibrary.SplitApplauncher",
           "cardinality": {
             "max": "*"
           }
         },
         "SplitAdditionalIntents": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents",
+          "target": "FioriAppsLibrary.SplitAdditionalIntents",
           "cardinality": {
             "max": "*"
           }
         },
         "ICFNodes": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ICFNodes",
+          "target": "FioriAppsLibrary.ICFNodes",
           "cardinality": {
             "max": "*"
           }
         },
         "WebDynproICFNodes": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.WebDynproICFNodes",
+          "target": "FioriAppsLibrary.WebDynproICFNodes",
           "cardinality": {
             "max": "*"
           }
         },
         "RequiredODataServices": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServices",
+          "target": "FioriAppsLibrary.RequiredODataServices",
           "cardinality": {
             "max": "*"
           }
         },
         "RequiredODataServiceGroups": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServiceGroups",
+          "target": "FioriAppsLibrary.RequiredODataServiceGroups",
           "cardinality": {
             "max": "*"
           }
         },
         "RelAppsMasterList": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList",
+          "target": "FioriAppsLibrary.RelAppsMasterList",
           "cardinality": {
             "max": "*"
           }
         },
         "BusinessCatalogPerApp": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalogPerApp",
+          "target": "FioriAppsLibrary.BusinessCatalogPerApp",
           "cardinality": {
             "max": "*"
           }
         },
         "ScopeItemPerApp": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp",
+          "target": "FioriAppsLibrary.ScopeItemPerApp",
           "cardinality": {
             "max": "*"
           }
         },
         "ScopeItems": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems",
+          "target": "FioriAppsLibrary.ScopeItems",
           "cardinality": {
             "max": "*"
           }
         },
         "BExQueries": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.BExQueries",
+          "target": "FioriAppsLibrary.BExQueries",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation_CE": {
+    "FioriAppsLibrary.ReleaseInformation_CE": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1684,7 +1684,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation": {
+    "FioriAppsLibrary.ReleaseInformation": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1700,14 +1700,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ReleaseInformation_CE",
+          "target": "FioriAppsLibrary.ReleaseInformation_CE",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole": {
+    "FioriAppsLibrary.RelatedAppsByRole": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1752,7 +1752,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRoleParameters": {
+    "FioriAppsLibrary.RelatedAppsByRoleParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1773,14 +1773,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole",
+          "target": "FioriAppsLibrary.RelatedAppsByRole",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem": {
+    "FioriAppsLibrary.RelatedAppsByScopeItem": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1825,7 +1825,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItemParameters": {
+    "FioriAppsLibrary.RelatedAppsByScopeItemParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1846,14 +1846,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem",
+          "target": "FioriAppsLibrary.RelatedAppsByScopeItem",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp": {
+    "FioriAppsLibrary.RolesPerApp": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1884,14 +1884,14 @@
         },
         "RelatedAppsByRole": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByRole",
+          "target": "FioriAppsLibrary.RelatedAppsByRole",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RolesPerAppParameters": {
+    "FioriAppsLibrary.RolesPerAppParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1902,14 +1902,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RolesPerApp",
+          "target": "FioriAppsLibrary.RolesPerApp",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp": {
+    "FioriAppsLibrary.ScopeItemPerApp": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1940,14 +1940,14 @@
         },
         "RelatedAppsByScopeItem": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByScopeItem",
+          "target": "FioriAppsLibrary.RelatedAppsByScopeItem",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerAppParameters": {
+    "FioriAppsLibrary.ScopeItemPerAppParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1958,14 +1958,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemPerApp",
+          "target": "FioriAppsLibrary.ScopeItemPerApp",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalogPerApp": {
+    "FioriAppsLibrary.BusinessCatalogPerApp": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -1998,14 +1998,14 @@
         },
         "RelatedAppsByBusinessCatalog": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog",
+          "target": "FioriAppsLibrary.RelatedAppsByBusinessCatalog",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog": {
+    "FioriAppsLibrary.RelatedAppsByBusinessCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2051,7 +2051,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalogParameters": {
+    "FioriAppsLibrary.RelatedAppsByBusinessCatalogParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2072,14 +2072,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsByBusinessCatalog",
+          "target": "FioriAppsLibrary.RelatedAppsByBusinessCatalog",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessRole": {
+    "FioriAppsLibrary.SplitBusinessRole": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2121,7 +2121,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitTechnicalCatalogs": {
+    "FioriAppsLibrary.SplitTechnicalCatalogs": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2151,7 +2151,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup": {
+    "FioriAppsLibrary.SplitBusinessGroup": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2190,7 +2190,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroupParameters": {
+    "FioriAppsLibrary.SplitBusinessGroupParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2206,14 +2206,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessGroup",
+          "target": "FioriAppsLibrary.SplitBusinessGroup",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse": {
+    "FioriAppsLibrary.RelatedAppsInverse": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2242,7 +2242,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverseParameters": {
+    "FioriAppsLibrary.RelatedAppsInverseParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2258,14 +2258,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelatedAppsInverse",
+          "target": "FioriAppsLibrary.RelatedAppsInverse",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog": {
+    "FioriAppsLibrary.SplitBusinessCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2304,7 +2304,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalogParameters": {
+    "FioriAppsLibrary.SplitBusinessCatalogParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2320,14 +2320,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitBusinessCatalog",
+          "target": "FioriAppsLibrary.SplitBusinessCatalog",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitApplauncher": {
+    "FioriAppsLibrary.SplitApplauncher": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2374,7 +2374,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents": {
+    "FioriAppsLibrary.SplitAdditionalIntents": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2424,7 +2424,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntentsParameters": {
+    "FioriAppsLibrary.SplitAdditionalIntentsParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2440,14 +2440,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SplitAdditionalIntents",
+          "target": "FioriAppsLibrary.SplitAdditionalIntents",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV": {
+    "FioriAppsLibrary.AppsByLeadingPV": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2477,7 +2477,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPVParameters": {
+    "FioriAppsLibrary.AppsByLeadingPVParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2488,14 +2488,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByLeadingPV",
+          "target": "FioriAppsLibrary.AppsByLeadingPV",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Down_PortRel": {
+    "FioriAppsLibrary.Down_PortRel": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2510,7 +2510,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.All_Rel": {
+    "FioriAppsLibrary.All_Rel": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2543,7 +2543,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Release_Group": {
+    "FioriAppsLibrary.Release_Group": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2576,7 +2576,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Related_Apps": {
+    "FioriAppsLibrary.Related_Apps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2611,7 +2611,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ProductVersions": {
+    "FioriAppsLibrary.ProductVersions": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2771,7 +2771,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Releases": {
+    "FioriAppsLibrary.Releases": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2799,7 +2799,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Notes": {
+    "FioriAppsLibrary.Notes": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2842,7 +2842,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.HANARoles": {
+    "FioriAppsLibrary.HANARoles": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2871,7 +2871,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Industry": {
+    "FioriAppsLibrary.Industry": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2886,7 +2886,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.HANAServices": {
+    "FioriAppsLibrary.HANAServices": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2933,7 +2933,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.HANAKPIs": {
+    "FioriAppsLibrary.HANAKPIs": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2956,7 +2956,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Extensions": {
+    "FioriAppsLibrary.Extensions": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -2999,7 +2999,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ODataServices": {
+    "FioriAppsLibrary.ODataServices": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3045,7 +3045,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SearchComponent": {
+    "FioriAppsLibrary.SearchComponent": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3086,7 +3086,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScreenshotLinks": {
+    "FioriAppsLibrary.ScreenshotLinks": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3111,7 +3111,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SolutionsCapabilityURL": {
+    "FioriAppsLibrary.SolutionsCapabilityURL": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3144,7 +3144,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Video_Links": {
+    "FioriAppsLibrary.Video_Links": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3173,7 +3173,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PresentationLinks": {
+    "FioriAppsLibrary.PresentationLinks": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3202,7 +3202,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.HomePageScreenshotLinks": {
+    "FioriAppsLibrary.HomePageScreenshotLinks": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3232,7 +3232,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.BExQueries": {
+    "FioriAppsLibrary.BExQueries": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3263,7 +3263,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.BExQueriesParameters": {
+    "FioriAppsLibrary.BExQueriesParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3279,14 +3279,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.BExQueries",
+          "target": "FioriAppsLibrary.BExQueries",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails": {
+    "FioriAppsLibrary.PredecessorDetails": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3313,7 +3313,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetailsParameters": {
+    "FioriAppsLibrary.PredecessorDetailsParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3324,14 +3324,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PredecessorDetails",
+          "target": "FioriAppsLibrary.PredecessorDetails",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails": {
+    "FioriAppsLibrary.SuccessorDetails": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3358,7 +3358,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetailsParameters": {
+    "FioriAppsLibrary.SuccessorDetailsParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3369,14 +3369,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.SuccessorDetails",
+          "target": "FioriAppsLibrary.SuccessorDetails",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PredecessorSuccessor": {
+    "FioriAppsLibrary.PredecessorSuccessor": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3418,7 +3418,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ICFNodes": {
+    "FioriAppsLibrary.ICFNodes": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3457,7 +3457,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.WebDynproICFNodes": {
+    "FioriAppsLibrary.WebDynproICFNodes": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3499,7 +3499,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServices": {
+    "FioriAppsLibrary.RequiredODataServices": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3548,7 +3548,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RequiredODataServiceGroups": {
+    "FioriAppsLibrary.RequiredODataServiceGroups": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3580,7 +3580,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList": {
+    "FioriAppsLibrary.RelAppsMasterList": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3626,7 +3626,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterListParameters": {
+    "FioriAppsLibrary.RelAppsMasterListParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3642,14 +3642,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelAppsMasterList",
+          "target": "FioriAppsLibrary.RelAppsMasterList",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppName": {
+    "FioriAppsLibrary.AppName": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3665,7 +3665,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RoleNames": {
+    "FioriAppsLibrary.RoleNames": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3688,7 +3688,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.LOB": {
+    "FioriAppsLibrary.LOB": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3703,7 +3703,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ProductCategories": {
+    "FioriAppsLibrary.ProductCategories": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3722,7 +3722,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationComponent": {
+    "FioriAppsLibrary.ApplicationComponent": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3745,7 +3745,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationComponentL2": {
+    "FioriAppsLibrary.ApplicationComponentL2": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3768,7 +3768,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Databases": {
+    "FioriAppsLibrary.Databases": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3783,7 +3783,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PVBackend": {
+    "FioriAppsLibrary.PVBackend": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3798,7 +3798,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PVFrontend": {
+    "FioriAppsLibrary.PVFrontend": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3813,7 +3813,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ApplicationType": {
+    "FioriAppsLibrary.ApplicationType": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3832,7 +3832,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.TechnicalCatalog": {
+    "FioriAppsLibrary.TechnicalCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3851,7 +3851,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.BusinessCatalog": {
+    "FioriAppsLibrary.BusinessCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3874,7 +3874,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SWCFrontend": {
+    "FioriAppsLibrary.SWCFrontend": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3889,7 +3889,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SWCBackend": {
+    "FioriAppsLibrary.SWCBackend": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3904,7 +3904,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SWCHana": {
+    "FioriAppsLibrary.SWCHana": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3919,7 +3919,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PPV": {
+    "FioriAppsLibrary.PPV": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3939,7 +3939,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SystemReadiness": {
+    "FioriAppsLibrary.SystemReadiness": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3950,7 +3950,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ReleaseGroups": {
+    "FioriAppsLibrary.ReleaseGroups": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3965,7 +3965,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PortfolioCategory": {
+    "FioriAppsLibrary.PortfolioCategory": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3980,7 +3980,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FormFactor": {
+    "FioriAppsLibrary.FormFactor": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -3995,7 +3995,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FilterMasterList": {
+    "FioriAppsLibrary.FilterMasterList": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4014,7 +4014,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FaaSEditions": {
+    "FioriAppsLibrary.FaaSEditions": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4029,7 +4029,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SolutionCapability": {
+    "FioriAppsLibrary.SolutionCapability": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4052,7 +4052,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SolutionCapabilityLegacyID": {
+    "FioriAppsLibrary.SolutionCapabilityLegacyID": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4071,7 +4071,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Innovations": {
+    "FioriAppsLibrary.Innovations": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4090,7 +4090,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.Intents": {
+    "FioriAppsLibrary.Intents": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4105,7 +4105,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.SAPUI5Component": {
+    "FioriAppsLibrary.SAPUI5Component": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4120,7 +4120,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ODataServicesFilter": {
+    "FioriAppsLibrary.ODataServicesFilter": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4135,7 +4135,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsFilter": {
+    "FioriAppsLibrary.ScopeItemsFilter": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4158,7 +4158,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsFilterGroup": {
+    "FioriAppsLibrary.ScopeItemsFilterGroup": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4173,7 +4173,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.BSPName": {
+    "FioriAppsLibrary.BSPName": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4188,7 +4188,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.UITechnology": {
+    "FioriAppsLibrary.UITechnology": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4203,7 +4203,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems": {
+    "FioriAppsLibrary.ScopeItems": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4234,7 +4234,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.ScopeItemsParameters": {
+    "FioriAppsLibrary.ScopeItemsParameters": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4250,14 +4250,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.ScopeItems",
+          "target": "FioriAppsLibrary.ScopeItems",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.HighlightedAppsFilter": {
+    "FioriAppsLibrary.HighlightedAppsFilter": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4276,7 +4276,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessCatalog": {
+    "FioriAppsLibrary.AppsByBusinessCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4301,7 +4301,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.InpBusinessCatalog": {
+    "FioriAppsLibrary.InpBusinessCatalog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4317,14 +4317,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessCatalog",
+          "target": "FioriAppsLibrary.AppsByBusinessCatalog",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessRoles": {
+    "FioriAppsLibrary.AppsByBusinessRoles": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4349,7 +4349,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.InpBusinessRoles": {
+    "FioriAppsLibrary.InpBusinessRoles": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4365,14 +4365,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppsByBusinessRoles",
+          "target": "FioriAppsLibrary.AppsByBusinessRoles",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppLauncherTitleFilter": {
+    "FioriAppsLibrary.AppLauncherTitleFilter": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4387,7 +4387,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FitResult": {
+    "FioriAppsLibrary.FitResult": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4915,7 +4915,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FitAnalysisResult": {
+    "FioriAppsLibrary.FitAnalysisResult": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -4946,14 +4946,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.FitResult",
+          "target": "FioriAppsLibrary.FitResult",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppListResult_CE": {
+    "FioriAppsLibrary.AppListResult_CE": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5285,7 +5285,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppListResult": {
+    "FioriAppsLibrary.AppListResult": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5296,14 +5296,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.AppListResult_CE",
+          "target": "FioriAppsLibrary.AppListResult_CE",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsAnalysis": {
+    "FioriAppsLibrary.RelevantAppsAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5318,7 +5318,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsOnly": {
+    "FioriAppsLibrary.RelevantAppsOnly": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5349,14 +5349,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelevantAppsAnalysis",
+          "target": "FioriAppsLibrary.RelevantAppsAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriAppsAnalysis": {
+    "FioriAppsLibrary.RelevantGUIAndFioriAppsAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5371,7 +5371,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriApps": {
+    "FioriAppsLibrary.RelevantGUIAndFioriApps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5402,14 +5402,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.RelevantGUIAndFioriAppsAnalysis",
+          "target": "FioriAppsLibrary.RelevantGUIAndFioriAppsAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.InstalledAppsInSampleAnalysis": {
+    "FioriAppsLibrary.InstalledAppsInSampleAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5424,7 +5424,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.InstalledApps": {
+    "FioriAppsLibrary.InstalledApps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5455,14 +5455,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.InstalledAppsInSampleAnalysis",
+          "target": "FioriAppsLibrary.InstalledAppsInSampleAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.NIAppsInSampleAnalysis": {
+    "FioriAppsLibrary.NIAppsInSampleAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5477,7 +5477,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.NotInstalledApps": {
+    "FioriAppsLibrary.NotInstalledApps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5508,14 +5508,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.NIAppsInSampleAnalysis",
+          "target": "FioriAppsLibrary.NIAppsInSampleAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PIAppsInSampleAnalysis": {
+    "FioriAppsLibrary.PIAppsInSampleAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5530,7 +5530,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.PartlyInstalledApps": {
+    "FioriAppsLibrary.PartlyInstalledApps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5561,14 +5561,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.PIAppsInSampleAnalysis",
+          "target": "FioriAppsLibrary.PIAppsInSampleAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.NRAppsInSampleAnalysis": {
+    "FioriAppsLibrary.NRAppsInSampleAnalysis": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5583,7 +5583,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.NotRelevantApps": {
+    "FioriAppsLibrary.NotRelevantApps": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5614,14 +5614,14 @@
         },
         "Results": {
           "type": "cds.Association",
-          "target": "SingleApp.fix.externalViewer.services.SingleApp.NRAppsInSampleAnalysis",
+          "target": "FioriAppsLibrary.NRAppsInSampleAnalysis",
           "cardinality": {
             "max": "*"
           }
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.UsageLog": {
+    "FioriAppsLibrary.UsageLog": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -5650,7 +5650,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.FuzzySearch": {
+    "FioriAppsLibrary.FuzzySearch": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {
@@ -6646,7 +6646,7 @@
         }
       }
     },
-    "SingleApp.fix.externalViewer.services.SingleApp.AppsOnSearch": {
+    "FioriAppsLibrary.AppsOnSearch": {
       "kind": "entity",
       "@cds.persistence.skip": true,
       "elements": {

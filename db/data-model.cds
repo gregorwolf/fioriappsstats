@@ -1,4 +1,4 @@
-using {SingleApp.fix.externalViewer.services.SingleApp as external} from '../srv/external/SingleApp';
+using {FioriAppsLibrary as external} from '../srv/external/SingleApp';
 
 namespace db;
 
