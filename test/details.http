@@ -1,27 +1,27 @@
 ###
-GET http://localhost:4004/catalog/
+GET http://localhost:4004/odata/v4/catalog/
 ###
-POST http://localhost:4004/catalog/loadAppsFromSAP
+POST http://localhost:4004/odata/v4/catalog/loadAppsFromSAP
 Content-Type: application/json
 
 {}
 ###
-POST http://localhost:4004/catalog/loadServicesFromSAP
+POST http://localhost:4004/odata/v4/catalog/loadServicesFromSAP
 Content-Type: application/json
 
 {}
 ###
-GET http://localhost:4004/catalog/Details
+GET http://localhost:4004/odata/v4/catalog/Details
   ?$count=true
   &$select=AppName,RequiredODataServices
   &$expand=RequiredODataServices
   &$top=10
 
 ###
-GET http://localhost:4004/catalog/RequiredODataServices
+GET http://localhost:4004/odata/v4/catalog/RequiredODataServices
   ?$count=true
   &$top=10
 Content-Type: application/json
 ###
-GET http://localhost:4004/catalog/RequiredODataServices
+GET http://localhost:4004/odata/v4/catalog/RequiredODataServices
     ?$apply=groupby((fioriId,releaseId,NameSpace,TechnicalName),aggregate(serviceCounter with sum as numberUsages))
