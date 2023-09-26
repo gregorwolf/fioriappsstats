@@ -15,7 +15,7 @@ build-parameters:
      commands:
       - npm install --production
       - cds build
-      - cp sqlite.db gen/srv
+      - cp db.sqlite gen/srv
 
 modules:
  # --------------------- SERVER MODULE ------------------------
