@@ -18,7 +18,7 @@
     "dustfs": "0.0.7",
     "express": "^4",
     "html-entities": "^2",
-    "odata-client": "^0",
+    "@odata/client": "^2",
     "sqlite3": "^5",
     "xlsx": "^0.18.5"
   },
