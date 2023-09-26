@@ -10,6 +10,7 @@
     "node": "^18"
   },
   "dependencies": {
+    "@cap-js/sqlite": "^1.2.1",
     "@sap/cds": "^7",
     "date-fns": "^2",
     "dustfs": "0.0.7",
