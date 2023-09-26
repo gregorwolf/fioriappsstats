@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@cap-js/sqlite": "^1.2.1",
+    "@sap-cloud-sdk/http-client": "^3.5.0",
+    "@sap-cloud-sdk/resilience": "^3.5.0",
     "@sap/cds": "^7",
     "date-fns": "^2",
     "dustfs": "0.0.7",
@@ -24,7 +26,7 @@
     "rimraf": "^5"
   },
   "scripts": {
-    "start": "export NODE_ENV=development && cds run",
+    "start": "cds-serve --profile development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:generator": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index"
   },
@@ -55,19 +57,19 @@
   },
   "cds": {
     "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": "*"
+      },
       "FioriAppsLibrary": {
-        "kind": "odata",
+        "kind": "odata-v2",
         "model": "srv/external/SingleApp",
         "credentials": {
           "path": "/sap/fix/externalViewer/services/SingleApp.xsodata/",
           "url": "https://fioriappslibrary.hana.ondemand.com"
         }
       },
-      "db": {
-        "kind": "sqlite",
-        "model": "*"
-      },
-      "SingleApp.fix.externalViewer.services.SingleApp": {
+      "SingleApp": {
         "kind": "odata-v2",
         "model": "srv/external/SingleApp"
       }
