@@ -6,18 +6,21 @@
   "license": "Apache-2.0",
   "author": "gregor.wolf@gmail.com",
   "private": false,
+  "engines": {
+    "node": "^18"
+  },
   "dependencies": {
-    "@sap/cds": "^5",
-    "date-fns": "^2.22.1",
+    "@sap/cds": "^7",
+    "date-fns": "^2",
     "dustfs": "0.0.7",
     "express": "^4",
-    "html-entities": "^2.3.2",
-    "odata-client": "^0.7.1",
-    "sqlite3": "^5.0.2",
+    "html-entities": "^2",
+    "odata-client": "^0",
+    "sqlite3": "^5",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2"
+    "rimraf": "^5"
   },
   "scripts": {
     "start": "export NODE_ENV=development && cds run",
