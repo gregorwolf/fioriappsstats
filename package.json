@@ -26,7 +26,7 @@
     "rimraf": "^5"
   },
   "scripts": {
-    "start": "cds-serve --profile development",
+    "start": "export NODE_ENV=development && cds-serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:generator": "rimraf generator/gen && mkdir -p generator/gen/abap && mkdir -p generator/gen/db/csv && cd generator && node index"
   },
