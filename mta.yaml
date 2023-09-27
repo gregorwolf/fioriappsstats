@@ -11,21 +11,23 @@ parameters:
    
 build-parameters:
   before-all:
-   - builder: custom
-     commands:
-      - npm install --production
-      - cds build
-      - cp db.sqlite gen/srv
+    - builder: custom
+      commands:
+        - npm install --production
+        - cds build
+        - cp db.sqlite gen/srv
 
 modules:
  # --------------------- SERVER MODULE ------------------------
- - name: fioriappsstats-srv
+  - name: fioriappsstats-srv
  # ------------------------------------------------------------
-   type: nodejs
-   path: gen/srv
-   parameters:
-     buildpack: nodejs_buildpack
-   provides:
-    - name: srv-api      # required by consumers of CAP services (e.g. approuter)
-      properties:
-        srv-url: ${default-url}
+    type: nodejs
+    path: gen/srv
+    build-parameters:
+      ignore: ["node_modules/"]
+    parameters:
+      buildpack: nodejs_buildpack
+    provides:
+     - name: srv-api      # required by consumers of CAP services (e.g. approuter)
+       properties:
+         srv-url: ${default-url}
