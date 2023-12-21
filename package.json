@@ -10,11 +10,11 @@
     "node": "^18"
   },
   "dependencies": {
-    "@cap-js/sqlite": "^1.2.1",
-    "@sap-cloud-sdk/http-client": "^3.5.0",
-    "@sap-cloud-sdk/resilience": "^3.5.0",
+    "@cap-js/sqlite": "^1",
+    "@sap-cloud-sdk/http-client": "^3",
+    "@sap-cloud-sdk/resilience": "^3",
     "@sap/cds": "^7",
-    "date-fns": "^2",
+    "date-fns": "^3",
     "dustfs": "0.0.7",
     "express": "^4",
     "html-entities": "^2",
